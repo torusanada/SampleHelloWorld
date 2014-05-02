@@ -19,7 +19,7 @@
     [super viewDidLoad];
 	//文字列変数を使って画面に文字を表示する
     NSString *str;
-    str = @"Hello,Nexseed.";
+    str = @"Hello,World.";
     
     NSInteger num;
     
