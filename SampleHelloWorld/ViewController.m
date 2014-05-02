@@ -17,7 +17,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	//文字列変数を使って画面に文字を表示する
+    NSString *str;
+    str = @"Hello,Nexseed.";
+    
+    NSInteger num;
+    
+    num = 100;
+    
+    self.myLabel.text = [NSString                         stringWithFormat:@"日本人は%ld人います。%@", num,str];
+    
+    
+    NSString *strlog;
+    
+    strlog = [NSString stringWithFormat:@"日本人は%ld人います。%@",num,str];
+    
+    //NSLog(@"%@",strlog);
+    NSLog(@"日本人は%ld人います。%@",num,str);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +43,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)BtnTap:(id)sender {
+    
+    self.myLabel.text = @"Hello.Cebu";
+}
+
 
 @end
